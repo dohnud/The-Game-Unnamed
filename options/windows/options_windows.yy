@@ -1,5 +1,5 @@
 {
-  "option_windows_display_name": "Hitboxes and Hurtboxes",
+  "option_windows_display_name": "The Game Unnamed",
   "option_windows_executable_name": "${project_name}",
   "option_windows_version": "1.0.0.0",
   "option_windows_company_info": "",
