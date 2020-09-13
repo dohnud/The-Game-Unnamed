@@ -11,6 +11,7 @@
 | Sound    | snd |
 | Font     | fnt |
 | Shader   | shd |
+
 *Example: an Object asset called "dude" will be "objDude"*
 
 *scripts I'll let slide cuz they don't really "exist" in gms2.3>*
