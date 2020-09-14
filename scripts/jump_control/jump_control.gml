@@ -11,6 +11,4 @@ function jump_control() {
 	    gSpeed = gSpeedDefault;
 	}
 
-
-
 }

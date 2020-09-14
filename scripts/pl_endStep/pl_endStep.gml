@@ -29,8 +29,8 @@ function pl_endStep() {
 	if(hit){
 	    squash_stretch(1.5,1.5);
 	    weaponSprite = sprEmpty;       
-	    god.shake  = true;
-	    god.freeze = true;
+	    objGod.shake  = true;
+	    objGod.freeze = true;
 	    y --;
 	    xSpeed = hitBy.xHit;
 	    ySpeed = hitBy.yHit;

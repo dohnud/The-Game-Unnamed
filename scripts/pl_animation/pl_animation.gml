@@ -55,10 +55,20 @@ function pl_animation() {
         
 	        //change facing direction based on left/right. 
 	        //facing flips the sprite to the left and right.
-	        if(left){
-	            facing = -1;
-	        }else if(right){
-	            facing = 1;
+	        if(!player && onGround){
+				if (p2_inst.x > xPos) {
+					facing = 1
+				}
+				else if(p2_inst.x < xPos ) {
+					facing = -1
+				}
+	        }else if(player && onGround){
+				if (p1_inst.x > xPos){
+					facing = 1;
+				}
+				else if(p1_inst.x < xPos) {
+				facing  = -1;
+				}
 	        }
 	    break;
     
@@ -113,7 +123,7 @@ function pl_animation() {
     
 	    case states.tumble:
 	        //draw hit sprite during hit stop
-	        if(god.freeze){
+	        if(objGod.freeze){
 	            animation_set(fd_pl_tumble,sprPlayer_Hit_Base);
 	            weaponSprite = sprEmpty;               
 	        }else{

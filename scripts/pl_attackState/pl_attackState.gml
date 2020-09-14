@@ -1,9 +1,9 @@
 function pl_attackState() {
 	//speed adjustments
 	if(onGround){
-	    xSpeed = approach(xSpeed,0,aSpeed * god.gameSpeed);
+	    xSpeed = approach(xSpeed,0,aSpeed * objGod.gameSpeed);
 	}else{
-	    xSpeed = approach(xSpeed,0,0.1 * god.gameSpeed);
+	    xSpeed = approach(xSpeed,0,0.1 * objGod.gameSpeed);
 	}
 
 	//code for each weapon type, and each attack for that weapon
@@ -30,7 +30,7 @@ function pl_attackState() {
 
 	//countdown hitbox duration if active
 	if(dur > 0){
-	    dur -= 1 * god.gameSpeed;
+	    dur -= 1 * objGod.gameSpeed;
 	}else{
 	    dur = 0;
 	}

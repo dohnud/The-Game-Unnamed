@@ -5,22 +5,22 @@ function __global_object_depths() {
 	gml_pragma( "global", "__global_object_depths()");
 
 	// insert the generated arrays here
-	global.__objectDepths[0] = 0; // god
-	global.__objectDepths[1] = 50; // parentBlocker
-	global.__objectDepths[2] = 50; // parentJumpthru
-	global.__objectDepths[3] = 0; // parentPhysics
-	global.__objectDepths[4] = 0; // oPlayer
-	global.__objectDepths[5] = -1; // oHitbox
-	global.__objectDepths[6] = -1; // oHurtbox
+	global.__objectDepths[0] = 0; // objGod
+	global.__objectDepths[1] = 50; // objBlocker
+	global.__objectDepths[2] = 50; // objJumpthru
+	global.__objectDepths[3] = 0; // objPhysics
+	global.__objectDepths[4] = 0; // objPlayer
+	global.__objectDepths[5] = -1; // objHitbox
+	global.__objectDepths[6] = -1; // objHurtbox
 
 
-	global.__objectNames[0] = "god";
-	global.__objectNames[1] = "parentBlocker";
-	global.__objectNames[2] = "parentJumpthru";
-	global.__objectNames[3] = "parentPhysics";
-	global.__objectNames[4] = "oPlayer";
-	global.__objectNames[5] = "oHitbox";
-	global.__objectNames[6] = "oHurtbox";
+	global.__objectNames[0] = "objGod";
+	global.__objectNames[1] = "objBlocker";
+	global.__objectNames[2] = "objJumpthru";
+	global.__objectNames[3] = "objPhysics";
+	global.__objectNames[4] = "objPlayer";
+	global.__objectNames[5] = "objHitbox";
+	global.__objectNames[6] = "objHurtbox";
 
 
 	// create another array that has the correct entries

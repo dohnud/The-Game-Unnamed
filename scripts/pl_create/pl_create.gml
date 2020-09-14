@@ -6,6 +6,11 @@ function pl_create() {
 
 	player = 0;
 
+	p1_health = 10;
+
+	p1_inst = inst_BB20ECC3;
+	p2_inst = inst_84FA69E9;
+
 	//buttons
 	up    = false;
 	down  = false;
@@ -19,6 +24,7 @@ function pl_create() {
 
 	jump  = false;
 	jumpHold = false;
+	doublejumped = false
 
 	attack = false;
 	attackHold = false;
@@ -44,7 +50,7 @@ function pl_create() {
 	aSpeedDefault = aSpeed;
 	cSpeed = 1;
 	tSpeed = 20;
-	jPower = -3;
+	jPower = -5;
 	facing = 1;
 
 	gSpeedDefault = gSpeed;
@@ -59,7 +65,7 @@ function pl_create() {
 	//hit and hurtboxes
 	hbox_init();
 
-	hpMax = 1000;
+	hpMax = 100;
 	hp    = hpMax;
 
 	stunDur = 0;

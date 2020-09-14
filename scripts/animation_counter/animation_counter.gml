@@ -3,10 +3,10 @@ function animation_counter() {
 
 	maxFrames = sprite_get_number(sprite) - 1;
 	frameDuration = ds_list_find_value(frameData, currentFrame);
-	frameCounter += frameSpeed  * god.gameSpeed;
+	frameCounter += frameSpeed  * objGod.gameSpeed;
 
 	if(frameCounter == frameDuration){
-	    currentFrame += 1  * god.gameSpeed;
+	    currentFrame += 1  * objGod.gameSpeed;
 	    frameCounter = 0;
 	}
 

@@ -15,7 +15,7 @@ if(keyboard_check_pressed(vk_space)){
 
 //change weapon
 if(keyboard_check_pressed(vk_lcontrol)){
-    with(oPlayer){
+    with(objPlayer){
         if(player == 0){
             weapon ++;
             if(weapon > weapons.axe){

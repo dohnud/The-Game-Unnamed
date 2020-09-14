@@ -24,7 +24,7 @@
     {"x":8.0,"y":8.0,},
   ],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"parentJumpthru","path":"objects/parentJumpthru/parentJumpthru.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"objJumpthru","path":"objects/objJumpthru/objJumpthru.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -33,7 +33,7 @@
     "path": "folders/Objects/parents.yy",
   },
   "resourceVersion": "1.0",
-  "name": "parentJumpthru",
+  "name": "objJumpthru",
   "tags": [],
   "resourceType": "GMObject",
 }

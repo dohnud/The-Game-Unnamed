@@ -3,17 +3,27 @@ function pl_normalState() {
 	mSpeed = mSpeedDefault;
 
 	//move left and right
-	if(left){
-	    xSpeed = approach(xSpeed,-mSpeed,aSpeed * god.gameSpeed);
-	}else if(right){
-	    xSpeed = approach(xSpeed,mSpeed,aSpeed * god.gameSpeed);
-	}else{
-	    xSpeed = approach(xSpeed,0,aSpeed * god.gameSpeed);
+	if(left && onGround){
+	    xSpeed = -mSpeed * objGod.gameSpeed;
+	}else if(right && onGround){
+	    xSpeed = mSpeed * objGod.gameSpeed;
+	}else if (onGround) {
+	    xSpeed = 0;
 	}
 
 	//jump if you are on the ground and not holding the jump button
-	if(onGround){
+	if(onGround || !doublejumped){
 	    if(jump && !jumpHold){
+			if (right) {
+				xSpeed = mSpeed * objGod.gameSpeed
+			}else if (left) {
+				xSpeed = -mSpeed * objGod.gameSpeed
+			}else {
+				xSpeed = 0
+			}
+			if (!onGround) {
+				doublejumped = true
+			}
 	        ySpeed = jPower;
 	        squash_stretch(0.7,1.3);
 	    }
@@ -78,8 +88,11 @@ function pl_normalState() {
 	//reset airDash after landing on the ground
 	if(onGround){
 	    airDash = false;
+		doublejumped = false
 	}
 
-
+	if(p1_health <= 0) {
+		currentState = states.dead;
+	}
 
 }

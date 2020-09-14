@@ -2,7 +2,7 @@
 onGround = check_below();
 
 if(!onGround){
-    ySpeed += gSpeed * god.gameSpeed;
+    ySpeed += gSpeed * objGod.gameSpeed;
 }
 
 

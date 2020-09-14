@@ -33,7 +33,7 @@
     "path": "folders/Objects/parents.yy",
   },
   "resourceVersion": "1.0",
-  "name": "parentBlocker",
+  "name": "objBlocker",
   "tags": [],
   "resourceType": "GMObject",
 }

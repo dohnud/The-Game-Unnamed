@@ -8,6 +8,7 @@ function hbox_init() {
 	yHit    = 0; //vertical knock back
 	hitStun = 0; //hit stun duration
 	damage  = 0; //damage dealt
+	blockdamage = 0; //damaget o blocking player
 	invincible = false; //what it sounds like
 
 
