@@ -1,4 +1,4 @@
-function god_create() {
+function objGod_create() {
 	enum_init(); //initialize all of the state, and weapon info
 
 	//screen shake

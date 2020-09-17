@@ -1,1 +1,1 @@
-script_execute(god_create,0,0,0,0,0);
+script_execute(objGod_create,0,0,0,0,0);

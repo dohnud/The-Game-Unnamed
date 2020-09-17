@@ -4,16 +4,36 @@ function pl_endStep() {
 
 	//run code based on players current state
 	switch(currentState){
-	    case states.normal:
-	        pl_normalState();
+	    case states.ground:
+	        pl_groundState();
 	    break;
-    
-	    case states.attack:
-	        pl_attackState();
-	    break;
-    
-	    case states.dash:
+		
+		case states.dash:
 	        pl_dashState();
+	    break;
+		
+		case states.run:
+	        pl_runState();
+	    break;
+		
+		case states.backdash:
+	        pl_backdashState();
+	    break;
+		
+		case states.air:
+	        pl_airState();
+	    break;
+		
+		case states.airdash:
+	        pl_airdashState();
+	    break;
+    
+		case states.prejump:
+			pl_prejumpState();
+		break;
+		
+		case states.attack:
+	        pl_attackState();
 	    break;
     
 	    case states.recovery:

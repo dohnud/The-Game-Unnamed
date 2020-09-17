@@ -1,27 +1,23 @@
 Windows NSIS Installer Script has been set to default due to changes in GameMaker Studio 2
 Converting GML script: ${project_dir}\scripts\state_change\state_change.gml
-Converted description /// @description state_change(state);
-/// @function state_change
+Converted description /// @description state_change(state);/// @function state_change
 /// @param state
 
 Converting GML script: ${project_dir}\scripts\pl_normalState\pl_normalState.gml
 Converted description /// @description movement
 
 Converting GML script: ${project_dir}\scripts\squash_stretch\squash_stretch.gml
-Converted description /// @description squash_stretch( xScale, yScale );
-/// @function squash_stretch
+Converted description /// @description squash_stretch( xScale, yScale );/// @function squash_stretch
 /// @param  xScale
 /// @param  yScale
 
 Converting GML script: ${project_dir}\scripts\frame_check\frame_check.gml
-Converted description /// @description frame_check(currentFrame, frameCounter);
-/// @function frame_check
+Converted description /// @description frame_check(currentFrame, frameCounter);/// @function frame_check
 /// @param currentFrame
 /// @param  frameCounter
 
 Converting GML script: ${project_dir}\scripts\hitbox_create\hitbox_create.gml
-Converted description /// @description hitbox_create( xOffset, yOffset, xScale, yScale, duration, xhit, yhit, hit stun, damage);
-/// @function hitbox_create
+Converted description /// @description hitbox_create( xOffset, yOffset, xScale, yScale, duration, xhit, yhit, hit stun, damage);/// @function hitbox_create
 /// @param  xOffset
 /// @param  yOffset
 /// @param  xScale
@@ -33,29 +29,25 @@ Converted description /// @description hitbox_create( xOffset, yOffset, xScale, 
 /// @param  damage
 
 Converting GML script: ${project_dir}\scripts\hurtbox_create\hurtbox_create.gml
-Converted description /// @description hurtbox_create(xOffset, yOffset, xScale, yScale);
-/// @function hurtbox_create
+Converted description /// @description hurtbox_create(xOffset, yOffset, xScale, yScale);/// @function hurtbox_create
 /// @param xOffset
 /// @param  yOffset
 /// @param  xScale
 /// @param  yScale
 
 Converting GML script: ${project_dir}\scripts\approach\approach.gml
-Converted description /// @description  Approach(start, end, shift);
-/// @function  Approach
+Converted description /// @description  Approach(start, end, shift);/// @function  Approach
 /// @param start
 /// @param  end
 /// @param  shift
 
 Converting GML script: ${project_dir}\scripts\animation_set\animation_set.gml
-Converted description /// @description animation_set ( frameData, sprite );
-/// @function animation_set 
+Converted description /// @description animation_set ( frameData, sprite );/// @function animation_set 
 /// @param  frameData
 /// @param  sprite
 
 Converting GML script: ${project_dir}\scripts\frame_factory\frame_factory.gml
-Converted description /// @description frame_factory(1,1,1...);
-/// @function frame_factory
+Converted description /// @description frame_factory(1,1,1...);/// @function frame_factory
 /// @param 1
 /// @param 1
 /// @param 1...

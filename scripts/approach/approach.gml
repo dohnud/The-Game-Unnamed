@@ -9,7 +9,4 @@ function approach(argument0, argument1, argument2) {
 	    return min(argument0 + argument2, argument1); 
 	else
 	    return max(argument0 - argument2, argument1);
-
-
-
 }

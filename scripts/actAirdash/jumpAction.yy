@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "god",
-    "path": "folders/Scripts/god.yy",
+    "name": "player",
+    "path": "folders/Scripts/player.yy",
   },
   "resourceVersion": "1.0",
-  "name": "god_create",
+  "name": "jumpAction",
   "tags": [],
   "resourceType": "GMScript",
 }

@@ -1,30 +1,32 @@
 function pl_controller() {
-	//player button inputs
-
 	if(player == 0){
-	    leftHold  = left;
-	    rightHold = right;
+		forwardHold = forward;
+		backHold  = back;
 	    upHold    = up;
 	    downHold  = down;
-    
-	    left  = keyboard_check(vk_left);
-	    right = keyboard_check(vk_right);
-	    up    = keyboard_check(vk_up);
-	    down  = keyboard_check(vk_down);
-    
-	    jumpHold = jump;
-	    jump = keyboard_check(ord("Z"));
-    
-	    attackHold = attack;
-	    attack = keyboard_check(ord("X"));
-    
-	    dashHold = dash;
-	    dash = keyboard_check(ord("C"));
-    
-	    itemHold = item;
-	    item = keyboard_check(ord("W"));
+		attackHold = attack;
+
+		if(keyboard_check(ord("D")) && keyboard_check(ord("A"))){
+			forward = false;
+			back = false;
+		}else {
+			if(facing = 1){
+				forward = keyboard_check(ord("D"));
+				back = keyboard_check(ord("A"));
+			}else {
+				forward  = keyboard_check(ord("A"));
+				back = keyboard_check(ord("D"));
+			}
+		}
+		
+		if(keyboard_check(vk_space)){
+			up = true;
+			down = false;
+		}else {
+			up = false;
+			down = keyboard_check(ord("S"));
+		}	
+		attack = keyboard_check(ord("G"));
 	}
-
-
-
+	trackDirections();	
 }

@@ -2,10 +2,17 @@ function enum_init() {
 	//initialize states, attacks, and weapons.
 
 	enum states {
-	    normal,
-	    wallRun,
-	    dash,
-	    attack,
+	    ground,
+		dash,
+		run,
+	    backdash,
+		
+		air,		
+		airdash,
+		
+		prejump,
+		
+		attack,
 	    dodge,
 	    block,
 	    tumble,

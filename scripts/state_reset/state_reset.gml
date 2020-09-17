@@ -1,6 +1,10 @@
 function state_reset() {
 	//reset state back to normal/default state
-	currentState = states.normal;
+	if(onGround) {
+		currentState = states.ground;
+	}else {
+		currentState = states.air;
+	}
 	frame_reset();
 
 

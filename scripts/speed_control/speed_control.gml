@@ -1,13 +1,13 @@
 function speed_control() {
 	//super jump
-	if(superJump){
-	    if(!onGround){
-	        aSpeed = 0;
-	    }else{
-	        aSpeed = aSpeedDefault;
-	        superJump = false;
-	    }
-	}
+//	if(superJump){
+//	    if(!onGround){
+//	        aSpeed = 0;
+//	    }else{
+//	        aSpeed = aSpeedDefault;
+//	        superJump = false;
+//	    }
+//	}
 
 	//knock back
 	if(knockBack){
@@ -25,11 +25,11 @@ function speed_control() {
 	}   
 
 	//air accel
-	if(!onGround){
-	    aSpeed = aSpeedDefault * 0.25;
-	}else{
-	    aSpeed = aSpeedDefault;
-	}
+//	if(!onGround){
+//	    aSpeed = aSpeedDefault * 0.25;
+//	}else{
+//	    aSpeed = aSpeedDefault;
+//	}
 
 
 

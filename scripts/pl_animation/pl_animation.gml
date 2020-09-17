@@ -22,38 +22,22 @@ function pl_animation() {
 
 	//change sprites and animations based on current state
 	switch(currentState){
-	    case states.normal:
-	        //grounded movement
-	        if(onGround){
-	            //idle
-	            if(!left && !right){
-	                if(down){
-	                    //crouch
-	                    animation_set(fd_pl_idle,sprPlayer_Recovery_Base);
-	                    weaponSprite = sprEmpty;
-	                }else{
-	                    //body
-	                    animation_set(fd_pl_idle,idleSprite);
-	                    weaponSprite = weaponIdle;
-	                }
-	            //run
-	            }else{
-	                animation_set(fd_pl_run,sprPlayer_Run_Base);
-	                weaponSprite = weaponRun;
-	            }
-	        //in air animation
+	    case states.ground:
+			if(down){
+	            //crouch
+	            animation_set(fd_pl_idle,sprPlayer_Recovery_Base);
+	            weaponSprite = sprEmpty;
+				
+	        }else if(forward || back){
+				//walk
+	            animation_set(fd_pl_run,sprPlayer_Run_Base);
+	            weaponSprite = weaponRun;
 	        }else{
-	            animation_set(fd_pl_jump,sprPlayer_Jump_Base);
-	            weaponSprite = weaponJump;
-	            //change sprite frame based on vertical speed
-	            if(ySpeed < 1){
-	                currentFrame = 0;
-	            }else{
-	                currentFrame = 1;
-	            }
-	        }
-        
-	        //change facing direction based on left/right. 
+	            //body
+	            animation_set(fd_pl_idle,sprPlayer_Idle_Base);
+	            weaponSprite = weaponIdle;
+			} 
+			//change facing direction based on left/right. 
 	        //facing flips the sprite to the left and right.
 	        if(!player && onGround){
 				if (p2_inst.x > xPos) {
@@ -70,9 +54,31 @@ function pl_animation() {
 				facing  = -1;
 				}
 	        }
+		break;
+
+	    case states.air:
+	        animation_set(fd_pl_jump,sprPlayer_Jump_Base);
+	        weaponSprite = weaponJump;
+	            //change sprite frame based on vertical speed
+	            if(ySpeed < 1){
+	                currentFrame = 0;
+	            }else{
+	                currentFrame = 1;
+	            }
 	    break;
     
 	    case states.dash:
+	        animation_set(fd_pl_roll,sprPlayer_Dash_Base);
+	        weaponSprite = sprEmpty;
+	    break;
+		
+		case states.run:
+		animation_set(fd_pl_run,sprPlayer_Run_Base);
+	            weaponSprite = weaponRun;
+		break;
+		
+		
+		case states.backdash:
 	        animation_set(fd_pl_roll,sprPlayer_Dash_Base);
 	        weaponSprite = sprEmpty;
 	    break;
