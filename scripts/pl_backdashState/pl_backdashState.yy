@@ -2,8 +2,8 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "states",
-    "path": "folders/Scripts/player/states.yy",
+    "name": "ground",
+    "path": "folders/Scripts/player/direct/states/ground.yy",
   },
   "resourceVersion": "1.0",
   "name": "pl_backdashState",

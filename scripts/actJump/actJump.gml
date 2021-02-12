@@ -1,12 +1,21 @@
 function actJump(){
-	prejump = 4;
-	jumpLockout = 5;
+	fCounter = 0;
 	if(onGround) {
 		doublejumped = false
-	}
-	else {
+	}else {
 	doublejumped = true
 	}
-	currentState = states.prejump();
-
+	
+	if(dir7) {
+		jumpBack = true;
+		jumpForward = false;
+	}else if(dir9) {
+		jumpBack = false;
+		jumpForward = true;
+	}else {
+		jumpBack = false;
+		jumpForward = false;
+	}
+	
+	state_change(states.prejump);
 }

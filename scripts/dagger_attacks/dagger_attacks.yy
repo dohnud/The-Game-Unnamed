@@ -2,8 +2,8 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "weapons",
-    "path": "folders/Scripts/player/weapons.yy",
+    "name": "obsoleite",
+    "path": "folders/Scripts/player/obsoleite.yy",
   },
   "resourceVersion": "1.0",
   "name": "dagger_attacks",

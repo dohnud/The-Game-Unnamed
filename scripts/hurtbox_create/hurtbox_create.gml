@@ -7,7 +7,7 @@
 function hurtbox_create(argument0, argument1, argument2, argument3) {
 
 	//create the hurtbox object, assign the owner to the creator, set offset and scale
-	_hurtbox = instance_create(x + argument0, y + argument1, objHurtbox);
+	_hurtbox = instance_create(x + argument0, y + argument1, oHurtbox);
 	_hurtbox.owner = id;
 	_hurtbox.xOffset = argument0;
 	_hurtbox.yOffset = argument1;
@@ -15,7 +15,4 @@ function hurtbox_create(argument0, argument1, argument2, argument3) {
 	_hurtbox.yScale  = argument3;
 
 	return _hurtbox;
-
-
-
 }

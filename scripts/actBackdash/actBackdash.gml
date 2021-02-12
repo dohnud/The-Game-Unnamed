@@ -1,6 +1,5 @@
 function actBackdash() {
-	dashDur = 20;
-	xSpeed = -2 * facing;
-	squash_stretch(1.3,0.7);
+	fCounter = 0;
+	xSpeed = -2.5 * facing;
 	currentState = states.backdash; 
 }

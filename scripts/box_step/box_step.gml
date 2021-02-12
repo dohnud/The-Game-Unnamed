@@ -5,7 +5,7 @@ function box_step() {
 	image_yscale = yScale;
 
 	//show boxes for debug purposes
-	if(objGod.showBox){
+	if(god.showBox){
 	    visible = true;
 	}else{
 	    visible = false;

@@ -21,7 +21,4 @@ function animation_create() {
 
 	//effects
 	landed = false; //used to determine when player lands on the ground after being in the air
-
-
-
 }

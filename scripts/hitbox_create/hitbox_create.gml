@@ -12,7 +12,7 @@
 function hitbox_create(argument0, argument1, argument2, argument3, argument4, argument5, argument6, argument7, argument8, arguement9) {
 
 	//create the hitbox object, assign the owner to the creator, set offset and scale
-	_hitbox = instance_create(x + argument0, y + argument1, objHitbox);
+	_hitbox = instance_create(x + argument0, y + argument1, oHitbox);
 	_hitbox.owner = id;
 	_hitbox.xOffset = argument0;
 	_hitbox.yOffset = argument1;

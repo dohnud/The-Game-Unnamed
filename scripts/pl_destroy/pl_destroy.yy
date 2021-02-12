@@ -2,8 +2,8 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "player",
-    "path": "folders/Scripts/player.yy",
+    "name": "events",
+    "path": "folders/Scripts/player/events.yy",
   },
   "resourceVersion": "1.0",
   "name": "pl_destroy",

@@ -1,6 +1,6 @@
 function sword_attacks() {
 	//create hitboxes based on specific frames during the attack
-	//and position the hitbox relative to the current weapon and attack
+	//and position the hitbox relative to the current attack
 	switch(subState){    
 	    case attacks.side_ground:
 	    case attacks.side_air:

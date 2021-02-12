@@ -1,28 +1,55 @@
  function pl_prejumpState(){
-	prejump -= 1;
-	ySpeed = 0;
-	squash_stretch(1.2,0.8);
-	if(prejump <= 0) {
-		if(dir1taplast[0] < 15 || dir2taplast[0] < 15 || dir3taplast[0] < 15) {
-			ySpeed = jPower * 1.7
-			if(dir3 || dir6 || dir9) {
-				xSpeed = facing * aSpeed * 1.3
-			}else if(dir1 || dir4 || dir7) {
-				xSpeed = facing * -aSpeed * 1.3
-			}else {
-				xSpeed = 0
+	fCounter += 1;
+	
+	if(ySpeed > 0.5) {
+		ySpeed = 0.5
+	} else if(ySpeed < -0.5) {
+		ySpeed = -0.5
+	}
+	
+	if(fCounter = 4) {
+		if(dir7 || dir8 || dir9) {
+			motHop = false
+		} else {
+			motHop = true
+		}
+		
+		if(!jumpBack && !jumpForward) {
+			if(dir7 || dir4 || dir1) {
+				jumpBack = true;
+			} else if(dir9 || dir6 || dir3) {
+				jumpForward = true;
 			}
-		}else{
-			ySpeed = jPower;
-			if(dir3 || dir6 || dir9) {
-				if(xSpeed*facing < aSpeed*facing) {
-					xSpeed = facing * aSpeed
-				}
-			}else if(dir1 || dir4 || dir7) {
-				xSpeed = facing * -aSpeed
-			}else {
-				xSpeed = 0
+		}
+		
+		if(motSuperjump && onGround) {
+			if(motHop) {
+				ySpeed = jPower * 0.8
+			} else {
+				ySpeed = jPower * 1.2
 			}
+		} else {
+			if(motHop) {
+				ySpeed = jPower * 0.7
+			} else {
+				ySpeed = jPower * 1
+			}
+		}
+		
+		if(jumpForward) {
+			if(motSuperjump) {
+				xSpeed = aSpeed * facing * 1.5;
+			} else {
+				xSpeed = aSpeed * facing;
+			}
+		}else if(jumpBack) {
+			if(motSuperjump) {
+				xSpeed = -aSpeed * facing * 1.5;
+			} else {
+				xSpeed = -aSpeed * facing;
+			}
+		}else {
+			xSpeed = 0;
 		}
 		state_change(states.air);
 	}

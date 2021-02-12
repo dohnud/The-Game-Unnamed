@@ -1,18 +1,10 @@
 function pl_airdashState() {
-	if(dashDur > 5) {
-		ySpeed = -0.4;
-	}
-	if(dashDur <= 10) {
-		xSpeed = approach(xSpeed,0,0.5 * objGod.gameSpeed);
-	}
+	ySpeed = 0;
+	fCounter += 1;
+	grav = false;
 
-	dashDur -= 1 * objGod.gameSpeed;
-	if(dashDur <= 0){
+	if(fCounter = 10){
+		grav = true;
 	    state_reset();
 	}
-	
-	if((dir7 || dir8 || dir9) && (!dir7hold && !dir8hold && !dir9hold) && !doublejumped){
-		actJump();
-	}
-
 }

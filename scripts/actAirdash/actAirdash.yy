@@ -2,8 +2,8 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "player",
-    "path": "folders/Scripts/player.yy",
+    "name": "actions",
+    "path": "folders/Scripts/player/direct/states/air/actions.yy",
   },
   "resourceVersion": "1.0",
   "name": "actAirdash",

@@ -1,4 +1,30 @@
 function trackDirections(){
+	//update holds
+	forwardHold = forward;
+	backHold  = back;
+    upHold    = up;
+	downHold  = down;
+		
+	//update inputs
+	if(facing = 1){
+		forward = keyboard_check(ord("D"));
+		back = keyboard_check(ord("A"));
+	}else {
+		forward  = keyboard_check(ord("A"));
+		back = keyboard_check(ord("D"));
+	}
+	
+	up = keyboard_check(vk_space);
+	down = keyboard_check(ord("S"));
+	
+	if(forward && back) {
+		forward = false;
+		back = false;
+	}
+	if(up && down) {
+		down = false;
+	}	
+	
 	//neutral(5)
 	if(!down && !back && !forward && !up) {
 		dir5 = true;		

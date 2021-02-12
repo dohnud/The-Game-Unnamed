@@ -7,7 +7,7 @@
   "option_steam_app_id": "0",
   "option_sci_usesci": false,
   "option_author": "",
-  "option_lastchanged": "10 September 2020 22:21:32",
+  "option_lastchanged": "",
   "option_spine_licence": false,
   "resourceVersion": "1.2",
   "name": "Main",

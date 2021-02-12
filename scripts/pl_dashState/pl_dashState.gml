@@ -1,11 +1,22 @@
 function pl_dashState() {
-	if(dashDur <= 5) {
-		xSpeed = approach(xSpeed,rSpeed*facing,0.5 * objGod.gameSpeed);
+	//advance dash animation
+	fCounter+= 1;
+	animation_set(fdDefaultDash,plDefaultDash);
+	
+	//slow movement at the end of a dash
+	if(fCounter > 10) {
+		xSpeed = approach(xSpeed,1*facing,0.5 * god.gameSpeed);
 	}
 
-	//count down dashDur and reset state to normal when dashDur reaches 0
-	dashDur -= 1 * objGod.gameSpeed;
-	if(dashDur <= 0){
+	if(fCounter > 10) {
+		if(dir7 || dir8 || dir9){
+			actJump();
+		}else if(motBackash) {
+			actBackdash()	
+		}
+	}
+	
+	if(fCounter = 18){
 		if(dir6) {
 			state_change(states.run)
 		}
@@ -13,23 +24,4 @@ function pl_dashState() {
 			state_reset();
 		}
 	}
-	
-	if(dir7 || dir8 || dir9){
-		actJump();
-	}
-	
-	if(!dir5 && dashDur < 15 && absolute(xSpeed) < mSpeedDefault) {
-		state_reset();
-	}
-	
-	if(dashDur < 10) {
-		if(dir4tap[0] && dir4taplast[1] < 15  && dir6last[0] > dir4taplast[1]) {
-			actBackdash()
-		}
-	}
-	
-	if((dir1 || dir2 || dir3) && dashDur < 15) {
-		state_reset();
-	}
-	
 }

@@ -10,13 +10,4 @@ function pl_beginStep() {
 
 	//player buttons
 	pl_controller();
-
-	//basic speed control for movement, etc
-	speed_control();
-
-	//change weapons
-	weapon_stats();
-
-
-
 }

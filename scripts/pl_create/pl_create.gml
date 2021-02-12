@@ -2,14 +2,42 @@ function pl_create() {
 	//inherit from parent object
 	event_inherited();
 
+	//??
 	landed = 0;
-
 	player = 0;
 
-	p1_inst = inst_BB20ECC3;
-	p2_inst = inst_84FA69E9;
+	//general
+	fCounter = 0;
+	
+	//states
+	currentState = states.ground;
+	lastState    = currentState;
 
-	//buttons
+	//movement
+	wSpeed = 1.5;
+	wbSpeed = -1.5;
+	rSpeed = 3;
+	frctnValue = 3;
+	
+	jPower = -10;
+	aSpeed = 2;
+	gSpeed = 1;
+	fSpeed = 5;
+
+	facing = 1;
+	
+	grav = true;
+
+	prejump = 0;
+	jumpForward = false;
+	jumpBack = false;
+	
+	recoverDur = 0;
+
+	airdashed = false;
+	doublejumped = false;
+	
+	//directions
 	forward = false;
 	back = false;
 	up    = false;
@@ -50,7 +78,6 @@ function pl_create() {
 	dir8hold = false;
 	dir9hold = false;
 	
-	
 	dir1last = [60, 60];
 	dir2last = [60, 60];
 	dir3last = [60, 60];
@@ -70,59 +97,44 @@ function pl_create() {
 	dir7taplast = [60, 60];
 	dir8taplast = [60, 60];
 	dir9taplast = [60, 60];
-	
-	
-	
-	dtBack = 0;
-	dtForward = 0;
-	dtDown = 0;
 		
-	doublejumped = false
-
-	attack = false;
-	attackHold = false;
+	//buttons
+	atkLP = false;
+	atkMP = false;
+	atkHP = false;
+	atkLK = false;
+	atkMK = false;
+	atkHK = false;
 	
-	mash = false;
-	superJump = false;
-	prejump = 0;
-	jumpLockout = 0;
-
-	//states
-	currentState = states.ground;
-	lastState    = currentState;
-	subState     = states.ground;
-
-	//movement
-	mSpeed = 1;
-	mSpeedDefault = mSpeed;
-	rSpeed = 1.5;
-	aSpeed = 1.25;
-	aSpeedDefault = aSpeed;
-	cSpeed = 1;
-	tSpeed = 3;
-	jPower = -6;
-	facing = 1;
-
-	gSpeedDefault = gSpeed;
-
-	dashDur = 0;
-	dashDurMax = 20;
-	recoverDur = 20;
-
-	airdashed = false;
+	atkLPhold = false;
+	atkMPhold = false;
+	atkHPhold = false;
+	atkLKhold = false;
+	atkMKhold = false;
+	atkHKhold = false;
+	
+	atkLPtap = false;
+	atkMPtap = false;
+	atkHPtap = false;
+	atkLKtap = false;
+	atkMKtap = false;
+	atkHKtap = false;
+	
+	//motions
+	motDash = false;
+	motBackash = false;
+	motSuperjump = false;
+	motHop = false;
 
 	//fighting
 	//hit and hurtboxes
 	hbox_init();
 
-	hpMax = 100;
+	hpMax = 1000;
 	hp    = hpMax;
 
 	stunDur = 0;
 	knockBack = false;
-
-	//attack
-	attackType = attacks.side_ground;
 
 	//hit
 	hit = false;
@@ -134,13 +146,6 @@ function pl_create() {
 	//draw
 	animation_create();
 
-	//weapons
-	weapon = weapons.sword;
-	weapon_stats();
-
 	//destroy
 	destroy = false;
-
-
-
 }

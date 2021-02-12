@@ -3,7 +3,7 @@ function pl_endStep() {
 	event_inherited();
 
 	//run code based on players current state
-	switch(currentState){
+		switch(currentState){
 	    case states.ground:
 	        pl_groundState();
 	    break;
@@ -44,13 +44,11 @@ function pl_endStep() {
 	        pl_tumbleState();
 	    break;
 	}
-
+	
 	//hit
-	if(hit){
-	    squash_stretch(1.5,1.5);
-	    weaponSprite = sprEmpty;       
-	    objGod.shake  = true;
-	    objGod.freeze = true;
+	if(hit){ 
+	    god.shake  = true;
+	    god.freeze = true;
 	    y --;
 	    xSpeed = hitBy.xHit;
 	    ySpeed = hitBy.yHit;
