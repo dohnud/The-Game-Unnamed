@@ -5,7 +5,7 @@ function pl_dashState() {
 	
 	//slow movement at the end of a dash
 	if(fCounter > 10) {
-		xSpeed = approach(xSpeed,1*facing,0.5 * god.gameSpeed);
+		xSpeed = approach(xSpeed,wSpeed*facing,frctnValue);
 	}
 
 	if(fCounter > 10) {

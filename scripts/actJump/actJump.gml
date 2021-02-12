@@ -1,11 +1,13 @@
 function actJump(){
 	fCounter = 0;
+	actAutocorrect();
+
 	if(onGround) {
-		doublejumped = false
+		doublejumped = false;
 	}else {
-	doublejumped = true
+	doublejumped = true;
 	}
-	
+		
 	if(dir7) {
 		jumpBack = true;
 		jumpForward = false;

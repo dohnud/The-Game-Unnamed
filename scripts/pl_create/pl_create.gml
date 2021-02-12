@@ -15,14 +15,15 @@ function pl_create() {
 
 	//movement
 	wSpeed = 1.5;
-	wbSpeed = -1.5;
+	wbSpeed = -1;
 	rSpeed = 3;
-	frctnValue = 3;
+	frctnValue = 2;
 	
-	jPower = -10;
+	jPowerV = -8;
+	jPowerH = 2.5;
 	aSpeed = 2;
 	gSpeed = 1;
-	fSpeed = 5;
+	fSpeed = 8;
 
 	facing = 1;
 	

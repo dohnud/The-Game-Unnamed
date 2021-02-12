@@ -6,6 +6,6 @@ function pl_runState() {
 	}else if(!dir6) {
 		state_reset()
 	}else {
-		xSpeed = facing * rSpeed * god.gameSpeed;
+		xSpeed = facing * rSpeed;
 	}
 }

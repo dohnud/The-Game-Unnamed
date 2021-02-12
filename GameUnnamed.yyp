@@ -1,7 +1,7 @@
 {
   "resources": [
     {"id":{"name":"actDie","path":"scripts/actDie/actDie.yy",},"order":1,},
-    {"id":{"name":"actJump","path":"scripts/actJump/actJump.yy",},"order":3,},
+    {"id":{"name":"actJump","path":"scripts/actJump/actJump.yy",},"order":2,},
     {"id":{"name":"oCollision","path":"objects/oCollision/oCollision.yy",},"order":2,},
     {"id":{"name":"updateDirection","path":"scripts/updateDirection/updateDirection.yy",},"order":1,},
     {"id":{"name":"actStand","path":"scripts/actStand/actStand.yy",},"order":7,},

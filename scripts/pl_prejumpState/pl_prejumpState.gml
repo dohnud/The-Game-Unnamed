@@ -24,29 +24,29 @@
 		
 		if(motSuperjump && onGround) {
 			if(motHop) {
-				ySpeed = jPower * 0.8
+				ySpeed = jPowerV * 0.8
 			} else {
-				ySpeed = jPower * 1.2
+				ySpeed = jPowerV * 1.2
 			}
 		} else {
 			if(motHop) {
-				ySpeed = jPower * 0.7
+				ySpeed = jPowerV * 0.6
 			} else {
-				ySpeed = jPower * 1
+				ySpeed = jPowerV * 1
 			}
 		}
 		
 		if(jumpForward) {
 			if(motSuperjump) {
-				xSpeed = aSpeed * facing * 1.5;
+				xSpeed = jPowerH * facing * 1.5;
 			} else {
-				xSpeed = aSpeed * facing;
+				xSpeed = jPowerH * facing;
 			}
 		}else if(jumpBack) {
 			if(motSuperjump) {
-				xSpeed = -aSpeed * facing * 1.5;
+				xSpeed = -jPowerH * facing * 1.5;
 			} else {
-				xSpeed = -aSpeed * facing;
+				xSpeed = -jPowerH * facing;
 			}
 		}else {
 			xSpeed = 0;
