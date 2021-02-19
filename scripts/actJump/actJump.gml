@@ -1,7 +1,7 @@
 function actJump(){
 	fCounter = 0;
 	actAutocorrect();
-
+	
 	if(onGround) {
 		doublejumped = false;
 	}else {
@@ -18,6 +18,5 @@ function actJump(){
 		jumpBack = false;
 		jumpForward = false;
 	}
-	
 	state_change(states.prejump);
 }

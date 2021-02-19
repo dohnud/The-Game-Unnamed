@@ -7,19 +7,22 @@
 		ySpeed = -0.5
 	}
 	
+	if(dir7) {
+		jumpBack = true;
+		jumpForward = false;
+	}else if(dir9) {
+		jumpBack = false;
+		jumpForward = true;
+	}else {
+		jumpBack = false;
+		jumpForward = false;
+	}
+	
 	if(fCounter = 4) {
 		if(dir7 || dir8 || dir9) {
 			motHop = false
 		} else {
 			motHop = true
-		}
-		
-		if(!jumpBack && !jumpForward) {
-			if(dir7 || dir4 || dir1) {
-				jumpBack = true;
-			} else if(dir9 || dir6 || dir3) {
-				jumpForward = true;
-			}
 		}
 		
 		if(motSuperjump && onGround) {

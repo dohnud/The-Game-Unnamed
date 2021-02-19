@@ -7,6 +7,7 @@
 function collision_create(argument0, argument1, argument2, argument3) {
 
 	//create the hurtbox object, assign the owner to the creator, set offset and scale
+	argument0 *=  facing;
 	_hurtbox = instance_create(x + argument0, y + argument1, oCollision);
 	_hurtbox.owner = id;
 	_hurtbox.xOffset = argument0;

@@ -1,6 +1,6 @@
 function hbox_init() {
 	//initialize a bunch of box info
-	hurtbox = hurtbox_create(-6 * facing,-22,12,22); //create and store hurtbox
+	hurtbox = hurtbox_create(-12,-36,20,36); //create and store hurtbox
 	collision = collision_create(0,0,8,22); //create and store collision box
 	hitbox  = -1; //default hitbox variable
 

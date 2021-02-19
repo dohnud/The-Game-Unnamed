@@ -4,7 +4,6 @@ function pl_create() {
 
 	//??
 	landed = 0;
-	player = 0;
 
 	//general
 	fCounter = 0;
