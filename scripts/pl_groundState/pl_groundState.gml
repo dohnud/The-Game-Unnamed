@@ -41,7 +41,10 @@ function pl_groundState() {
 	    actBackdash()
 	}
 	
-	
+	//attacks
+	if(atkLPtap){
+		atk5LP()
+	}
 	
 //	if(p1_health <= 0) {
 //		currentState = states.dead;

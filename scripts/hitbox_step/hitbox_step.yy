@@ -2,8 +2,8 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "box events",
-    "path": "folders/Scripts/player/hitboxes/box events.yy",
+    "name": "hitboxes",
+    "path": "folders/Scripts/boxes/hitboxes.yy",
   },
   "resourceVersion": "1.0",
   "name": "hitbox_step",

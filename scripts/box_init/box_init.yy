@@ -2,8 +2,8 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "box events",
-    "path": "folders/Scripts/player/hitboxes/box events.yy",
+    "name": "general",
+    "path": "folders/Scripts/boxes/general.yy",
   },
   "resourceVersion": "1.0",
   "name": "box_init",

@@ -7,6 +7,4 @@ function animation_set(argument0, argument1) {
 	frameData = argument0;
 	sprite = argument1;
 
-
-
 }

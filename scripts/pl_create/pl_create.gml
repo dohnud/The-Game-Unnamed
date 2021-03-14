@@ -1,7 +1,7 @@
 function pl_create() {
 	//inherit from parent object
 	event_inherited();
-
+	
 	//??
 	landed = 0;
 
@@ -126,10 +126,7 @@ function pl_create() {
 	motSuperjump = false;
 	motHop = false;
 
-	//fighting
-	//hit and hurtboxes
-	hbox_init();
-
+	//other
 	hpMax = 1000;
 	hp    = hpMax;
 
@@ -140,6 +137,9 @@ function pl_create() {
 	hit = false;
 	hitBy = -1;
 
+	//hit and hurtboxes
+	hbox_init();
+	
 	//frame data
 	pl_frameData();
 

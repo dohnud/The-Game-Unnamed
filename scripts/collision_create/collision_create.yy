@@ -2,8 +2,8 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "hitboxes",
-    "path": "folders/Scripts/player/hitboxes.yy",
+    "name": "collisionboxes",
+    "path": "folders/Scripts/boxes/collisionboxes.yy",
   },
   "resourceVersion": "1.0",
   "name": "collision_create",
