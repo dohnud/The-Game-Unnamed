@@ -9,27 +9,29 @@ if(instance_exists(instPlayer1) && instance_exists(instPlayer2)) {
 	if(target_y > 525) {
 		cam_y = 525 - view_height/2;
 	}else {
-//		var cam_y = target_y - view_height/2-50;
+		var cam_y = target_y - (view_height/2);
 	}
 	camera_set_view_pos(view,cam_x,cam_y)
 	
 	if(instance_exists(instWallL) && instance_exists(instWallR)) {
 		if(target_x - 100 > 100) {
-			instWallL.x = target_x - 150;
+			instWallL.x = target_x - 164;
 		} else {
 			instWallL.x = 100;
 		}
 		if(target_x + 100 < 1100) {
-			instWallR.x = target_x + 150;
+			instWallR.x = target_x + 164;
 		} else {
 			instWallR.x = 1100;
 		}
 	}
+	var _min = 100;
+	var _max = 250;
+	seperation = clamp(abs(instPlayer1.x-instPlayer2.x), _min, _max);
+	var zoom = lerp(0.01, 1.5, (seperation - _min)/(_max-_min));
+	cameraZoom(zoom);
+	
 }
-
-
-
-
 
 //screen shake
 //if(shake) {

@@ -2,11 +2,18 @@ function pl_create() {
 	//inherit from parent object
 	event_inherited();
 	
+	opponent = noone;
+	for (var i=0; i < instance_number(oPlayer); i++) {
+		var p_id = instance_find(oPlayer, i);
+		if p_id != id {
+			opponent = p_id;
+		}
+	}
 	//??
 	landed = 0;
 
 	//general
-	fCounter = 0;
+	animEnd = false;
 	
 	//states
 	currentState = states.ground;

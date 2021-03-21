@@ -26,11 +26,11 @@ function pl_airState() {
 	}
 		
 	//airdashing
-	if(motDash){
-			actAirdash(6)
+	if(motDash && !airdashed){
+			actAirdash()
 	}
-	if(motBackash){
-	        actAirdash(4)
+	if(motBackash && !airdashed){
+	        actAirdashBack()
 	}
 
 //	if(p1_health <= 0) {

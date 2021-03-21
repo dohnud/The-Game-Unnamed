@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "ground",
-    "path": "folders/Scripts/player/direct/states/ground.yy",
+    "name": "actions",
+    "path": "folders/Scripts/player/direct/states/ground/actions.yy",
   },
   "resourceVersion": "1.0",
-  "name": "pl_runState",
+  "name": "actRun",
   "tags": [],
   "resourceType": "GMScript",
 }

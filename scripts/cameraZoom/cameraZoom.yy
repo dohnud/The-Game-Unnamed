@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "states",
-    "path": "folders/Scripts/player/states.yy",
+    "name": "god",
+    "path": "folders/Scripts/god.yy",
   },
   "resourceVersion": "1.0",
-  "name": "pl_dashState",
+  "name": "cameraZoom",
   "tags": [],
   "resourceType": "GMScript",
 }

@@ -1,11 +1,8 @@
  function pl_prejumpState(){
-	fCounter += 1;
+	animation_counter()
 	
-	if(ySpeed > 0.5) {
-		ySpeed = 0.5
-	} else if(ySpeed < -0.5) {
-		ySpeed = -0.5
-	}
+	ySpeed = 0
+	xSpeed = 0
 	
 	if(dir7) {
 		jumpBack = true;
@@ -18,7 +15,9 @@
 		jumpForward = false;
 	}
 	
-	if(fCounter = 4) {
+	if(animEnd) {
+		state_change(states.air);
+				
 		if(dir7 || dir8 || dir9) {
 			motHop = false
 		} else {
@@ -54,6 +53,5 @@
 		}else {
 			xSpeed = 0;
 		}
-		state_change(states.air);
 	}
 }

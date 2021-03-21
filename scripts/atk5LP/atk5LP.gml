@@ -1,4 +1,5 @@
-function atk5LP() {
-	animation_set(fdDefault5lp,plDefault5lp);
+function atksLP() {
+	frame_reset();
+	animation_set(fdDefaultsLP,plDefaultsLP);	
 	currentState = states.attack;
 }

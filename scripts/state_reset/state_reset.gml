@@ -6,7 +6,4 @@ function state_reset() {
 		currentState = states.air;
 	}
 	frame_reset();
-
-
-
 }

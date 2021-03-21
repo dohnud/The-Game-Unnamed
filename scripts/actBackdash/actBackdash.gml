@@ -1,5 +1,5 @@
 function actBackdash() {
-	fCounter = 0;
+	frame_reset();
 	xSpeed = -2.5 * facing;
 	currentState = states.backdash; 
 }

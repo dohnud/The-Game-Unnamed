@@ -1,5 +1,5 @@
 function actJump(){
-	fCounter = 0;
+	animation_set(fdDefaultPrejump,plDefaultCrouch)
 	actAutocorrect();
 	
 	if(onGround) {

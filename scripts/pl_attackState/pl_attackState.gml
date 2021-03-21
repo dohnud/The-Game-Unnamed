@@ -1,4 +1,5 @@
 function pl_attackState() {
+	animation_counter()
 	//speed adjustments
 	if(onGround){
 	    xSpeed = approach(xSpeed,0,aSpeed * god.gameSpeed);
@@ -9,10 +10,5 @@ function pl_attackState() {
 	//    dur -= 1 * god.gameSpeed;
 	//}else{
 	//    dur = 0;
-	//}
-
-	////reset to normal state when the attack animation ends
-	//if(fCounter){
-	//    state_reset();  
 	//}
 }

@@ -11,6 +11,9 @@ function pl_groundState() {
 	
 	//walking
 	if(dir6) {
+		//if(lastState = states.dash){
+		//	actRun();
+		//}
 	    actWalk();
 	}
 	if(dir4) {
@@ -43,7 +46,7 @@ function pl_groundState() {
 	
 	//attacks
 	if(atkLPtap){
-		atk5LP()
+		atksLP()
 	}
 	
 //	if(p1_health <= 0) {
