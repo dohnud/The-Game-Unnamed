@@ -7,15 +7,14 @@ function trackDirections(){
 		
 	//update inputs
 	if(facing = 1){
-		forward = keyboard_check(ord("D"));
-		back = keyboard_check(ord("A"));
+		forward = east;
+		back = west;
 	}else {
-		forward  = keyboard_check(ord("A"));
-		back = keyboard_check(ord("D"));
+		forward  = west;
+		back = east;
 	}
-	
-	up = keyboard_check(vk_space);
-	down = keyboard_check(ord("S"));
+	up = north;
+	down = south;
 	
 	if(forward && back) {
 		forward = false;

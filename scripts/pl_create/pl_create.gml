@@ -9,6 +9,8 @@ function pl_create() {
 			opponent = p_id;
 		}
 	}
+	
+	
 	//??
 	landed = 0;
 
@@ -44,12 +46,27 @@ function pl_create() {
 	airdashed = false;
 	doublejumped = false;
 	
-	//directions
+	//controls
+	pad_num = -1;
+	
+	east  = false;
+	west  = false;
+	north = false;
+	south = false;
+	
 	forward = false;
-	back = false;
-	up    = false;
-	down  = false;
-
+	back    = false;
+	up      = false;
+	down    = false;
+	
+	lp = false;
+	mp = false;
+	hp = false;
+	lk = false;
+	mk = false;
+	hk = false;
+	
+	//directions
 	forwardHold = forward;
 	backHold = back;
 	upHold    = up;
@@ -134,11 +151,11 @@ function pl_create() {
 	motHop = false;
 
 	//other
-	hpMax = 1000;
-	hp    = hpMax;
+	//hpMax = 1000;
+	//hp    = hpMax;
 
-	stunDur = 0;
-	knockBack = false;
+	//stunDur = 0;
+	//knockBack = false;
 
 	//hit
 	hit = false;

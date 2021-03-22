@@ -3,7 +3,7 @@
   "isCompatibility": false,
   "parent": {
     "name": "collisionboxes",
-    "path": "folders/Scripts/boxes/collisionboxes.yy",
+    "path": "folders/collisionboxes.yy",
   },
   "resourceVersion": "1.0",
   "name": "collision_create",

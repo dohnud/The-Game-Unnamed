@@ -169,7 +169,7 @@
     {"folderPath":"folders/Sprites/player/attacks.yy","order":2,"resourceVersion":"1.0","name":"attacks","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Scripts/boxes/hurtboxes.yy","order":8,"resourceVersion":"1.0","name":"hurtboxes","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Scripts/boxes/hitboxes.yy","order":9,"resourceVersion":"1.0","name":"hitboxes","tags":[],"resourceType":"GMFolder",},
-    {"folderPath":"folders/Scripts/boxes/collisionboxes.yy","order":10,"resourceVersion":"1.0","name":"collisionboxes","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/collisionboxes.yy","order":14,"resourceVersion":"1.0","name":"collisionboxes","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/boxes/Hurtboxes.yy","order":3,"resourceVersion":"1.0","name":"Hurtboxes","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [

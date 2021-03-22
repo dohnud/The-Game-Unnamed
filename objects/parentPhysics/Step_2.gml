@@ -26,11 +26,11 @@ repeat(abs(v)){
 }
 
 repeat(abs(h)) {        
-    if(!place_meeting(x+sign(h),y,parentBoarder) && !place_meeting(x+sign(h),y,opponent.collision)){
-        x += sign(h) * god.gameSpeed;
-    }else{
+    if(place_meeting(collision.x+sign(h),collision.y,parentBoarder) || (onGround && collision.collLine = opponent.collision)){
         x_collide();
         break;
+    }else{
+		x += sign(h) * god.gameSpeed;
     }
 }
 

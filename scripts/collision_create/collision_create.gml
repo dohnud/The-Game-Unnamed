@@ -4,15 +4,17 @@
 /// @param  yOffset
 /// @param  xScale
 /// @param  yScale
-function collision_create(argument0, argument1, argument2, argument3) {
+function collision_create(argument0, argument1) {
 
 	//create the hurtbox object, assign the owner to the creator, set offset and scale
-	_hurtbox = instance_create(x + argument0, y + argument1, oCollision);
+	_hurtbox = instance_create(x, y, oCollision);
 	_hurtbox.owner = id;
-	_hurtbox.xOffset = argument0;
-	_hurtbox.yOffset = argument1;
-	_hurtbox.xScale  = argument2;
-	_hurtbox.yScale  = argument3;
+	_hurtbox.xOffset = 0;
+	_hurtbox.yOffset = 0;
+	_hurtbox.xScale  = argument0;
+	_hurtbox.yScale  = argument1;
+	
+	_hurtbox.collLine = noone;
 
 	return _hurtbox;
 }

@@ -3,6 +3,8 @@ function hbox_update() {
 	with(collision){
 	    x = owner.x + xOffset;
 	    y = owner.y + yOffset;
+		var colLineX = x + xScale*owner.facing;
+		collLine = collision_line(colLineX,y,colLineX,y + yScale,owner.opponent.collision,false,true)
 	}
 	
 	with(hurtbox){

@@ -14,3 +14,7 @@ if(keyboard_check_pressed(vk_rcontrol)){
     showBox = !showBox;
 }
 
+if(instance_exists(instPlayer1) && instance_exists(instPlayer2)){
+	player[0] = instPlayer1;
+	player[1] = instPlayer2;
+}
