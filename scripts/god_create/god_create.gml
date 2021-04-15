@@ -13,6 +13,7 @@ function god_create() {
 
 	//debug
 	showBox = false; //used to show hitboxes
+	pause = false;
 
 
 

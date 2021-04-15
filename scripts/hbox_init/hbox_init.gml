@@ -2,6 +2,7 @@ function hbox_init() {
 	//initialize a bunch of box info
 	hurtbox = hurtbox_create(0,0,1,1); //create and store hurtbox
 	collision = collision_create(8,18); //create and store collision box
+	reference = reference_create();
 	
 	hitbox  = -1; //default hitbox variable
 

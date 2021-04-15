@@ -7,14 +7,15 @@
 function collision_create(argument0, argument1) {
 
 	//create the hurtbox object, assign the owner to the creator, set offset and scale
-	_hurtbox = instance_create(x, y, oCollision);
-	_hurtbox.owner = id;
-	_hurtbox.xOffset = 0;
-	_hurtbox.yOffset = 0;
-	_hurtbox.xScale  = argument0;
-	_hurtbox.yScale  = argument1;
+	_collision = instance_create(x, y, oCollision);
+	_collision.owner = id;
+	_collision.xOffset = 0;
+	_collision.yOffset = 0;
+	_collision.xScale  = 8;
+	_collision.yScale  = 18;
 	
-	_hurtbox.collLine = noone;
+	_collision.back  = x-(4*facing);
+	_collision.front = x+(4*facing);
 
-	return _hurtbox;
+	return _collision;
 }

@@ -7,6 +7,11 @@ function hbox_update() {
 		collLine = collision_line(colLineX,y,colLineX,y + yScale,owner.opponent.collision,false,true)
 	}
 	
+	with(reference){
+		x = owner.x;
+	    y = owner.y;
+	}
+	
 	with(hurtbox){
 	    x = owner.x + xOffset;
 	    y = owner.y + yOffset;

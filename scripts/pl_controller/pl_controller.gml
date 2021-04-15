@@ -3,6 +3,9 @@ function pl_controller() {
 	#macro vk_apostrophe 222
 	if(player == 0) {
 		if(pad_num = -1) {
+			start  = keyboard_check_pressed(vk_escape);
+			select = keyboard_check_pressed(vk_tab);
+			
 			north = keyboard_check(vk_space);
 			south = keyboard_check(ord("S"));
 			east  = keyboard_check(ord("D"));
@@ -17,6 +20,9 @@ function pl_controller() {
 			hk = keyboard_check(ord("J"));
 		
 		}else {
+			start  = gamepad_button_check_pressed(pad_num, gp_start);
+			select = gamepad_button_check_pressed(pad_num, gp_select);
+			
 		    north = gamepad_button_check(pad_num, gp_padu);
 			south = gamepad_button_check(pad_num, gp_padd);
 			east  = gamepad_button_check(pad_num, gp_padr);
@@ -31,6 +37,9 @@ function pl_controller() {
 		}
 	}else {
 		if(pad_num = -1) {
+			start  = keyboard_check_pressed(vk_enter);
+			select = keyboard_check_direct(vk_rshift);
+			
 			north = keyboard_check(vk_down);
 			south = keyboard_check(vk_semicolon);
 			east  = keyboard_check(vk_apostrophe);
@@ -45,6 +54,9 @@ function pl_controller() {
 			hk = keyboard_check(vk_numpad3);
 		
 		}else {
+			start  = gamepad_button_check_pressed(pad_num, gp_start);
+			select = gamepad_button_check_pressed(pad_num, gp_select);
+			
 		    north = gamepad_button_check(pad_num, gp_padu);
 			south = gamepad_button_check(pad_num, gp_padd);
 			east  = gamepad_button_check(pad_num, gp_padr);

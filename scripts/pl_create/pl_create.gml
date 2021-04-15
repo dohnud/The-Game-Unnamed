@@ -20,6 +20,7 @@ function pl_create() {
 	//states
 	currentState = states.ground;
 	lastState    = currentState;
+	currentAttack = -1;
 
 	//movement
 	wSpeed = 1.5;
@@ -27,11 +28,12 @@ function pl_create() {
 	rSpeed = 3;
 	frctnValue = 2;
 	
-	jPowerV = -8;
+	jPowerV = -9;
 	jPowerH = 2.5;
 	aSpeed = 2;
 	gSpeed = 1;
-	fSpeed = 8;
+	fSpeed = 4;
+	ffSpeed = 10;
 
 	facing = 1;
 	
@@ -48,6 +50,9 @@ function pl_create() {
 	
 	//controls
 	pad_num = -1;
+	
+	start  = false;
+	select = false;
 	
 	east  = false;
 	west  = false;

@@ -4,20 +4,32 @@
 	ySpeed = 0
 	xSpeed = 0
 	
-	if(dir7) {
-		jumpBack = true;
-		jumpForward = false;
-	}else if(dir9) {
-		jumpBack = false;
-		jumpForward = true;
-	}else {
-		jumpBack = false;
-		jumpForward = false;
+	if(frameCounter < 2) {
+		if(dir7) {
+			jumpBack = true;
+			jumpForward = false;
+		}else if(dir9) {
+			jumpBack = false;
+			jumpForward = true;
+		}else {
+			jumpBack = false;
+			jumpForward = false;
+		}
 	}
 	
 	if(animEnd) {
 		state_change(states.air);
-				
+		
+		if(!jumpBack && !jumpForward) {
+			if(dir7 || dir4) {
+				jumpBack = true;
+				jumpForward = false;
+			}else if(dir9 || dir6) {
+				jumpBack = false;
+				jumpForward = true;
+			}
+		}
+		
 		if(dir7 || dir8 || dir9) {
 			motHop = false
 		} else {
@@ -32,7 +44,7 @@
 			}
 		} else {
 			if(motHop) {
-				ySpeed = jPowerV * 0.6
+				ySpeed = jPowerV * 0.7
 			} else {
 				ySpeed = jPowerV * 1
 			}

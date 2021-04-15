@@ -9,6 +9,15 @@ function pl_groundState() {
 	airdashed = false
 	doublejumped = false
 	
+	//blocking
+	if(dir4 || dir7) {
+		hurtbox.block = 1;
+	} else if(dir1) {
+		hurtbox.block = 2;
+	} else {
+		hurtbox.block = 0;
+	}
+	
 	//walking
 	if(dir6) {
 		//if(lastState = states.dash){
@@ -36,11 +45,11 @@ function pl_groundState() {
 	}
 	
 	//dashing
-	if(motDash){
+	if(dir6tap[0] && motDash){
 		actDash()
 	}
 	//backdashing
-	if(motBackash){
+	if(dir4tap[0] && motBackash){
 	    actBackdash()
 	}
 	

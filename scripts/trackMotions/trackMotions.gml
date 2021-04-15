@@ -1,13 +1,13 @@
 function trackMotions(){
 	//dash
-	if(dir6tap[0] && dir6taplast[1] < 15 && dir4last[0] > dir6taplast[1]) {
+	if(min(dir6taplast[1], dir3taplast[0], dir9taplast[0]) < 15 && min(dir4last[0], dir1last[0], dir7last[0]) > min(dir6taplast[1], dir3taplast[0], dir9taplast[0])) {
 		motDash = true;
 	}else {
 		motDash = false;
 	}
 		
 	//backdash
-	if(dir4tap[0] && dir4taplast[1] < 15 && dir6last[0] > dir4taplast[1]) {
+	if(min(dir4taplast[1], dir1taplast[0], dir7taplast[0]) < 15 && min(dir6last[0], dir3last[0], dir9last[0]) > min(dir4taplast[1], dir1taplast[0], dir7taplast[0])) {
 		motBackash = true;
 	}else {
 		motBackash = false;

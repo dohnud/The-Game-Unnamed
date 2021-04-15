@@ -10,11 +10,12 @@ function hurtbox_create(argument0, argument1, argument2, argument3) {
 	argument0 *=  facing;
 	_hurtbox = instance_create(x + argument0, y + argument1, oHurtbox);
 	_hurtbox.owner = id;
-	_hurtbox.ownerInstance = object_index;
 	_hurtbox.xOffset = argument0;
 	_hurtbox.yOffset = argument1;
 	_hurtbox.xScale  = argument2;
 	_hurtbox.yScale  = argument3;
+	
+	_hurtbox.block   = 0;
 
 	return _hurtbox;
 }

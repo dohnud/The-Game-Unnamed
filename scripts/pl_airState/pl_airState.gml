@@ -13,11 +13,23 @@ function pl_airState() {
 	}
 	grav = true;
 	
+	//blocking
+	if(dir1 || dir4 || dir7) {
+		hurtbox.block = 3;
+	} else {
+		hurtbox.block = 0;
+	}
+	
 	//drift
 	if(dir6 && xSpeed<=aSpeed){
 	    xSpeed = approach(xSpeed,aSpeed*facing,0.1 * god.gameSpeed);
 	}else if(dir4 && xSpeed>=-aSpeed){
 	    xSpeed = approach(xSpeed,-aSpeed*facing,0.1 * god.gameSpeed);
+	}
+	
+	//fastfall
+	if(ySpeed > -2 && dir2tap[0]) {
+		ySpeed = ffSpeed;
 	}
 
 	//jumping
@@ -26,10 +38,10 @@ function pl_airState() {
 	}
 		
 	//airdashing
-	if(motDash && !airdashed){
+	if(dir6tap[0] && motDash && !airdashed){
 			actAirdash()
 	}
-	if(motBackash && !airdashed){
+	if(dir4tap[0] && motBackash && !airdashed){
 	        actAirdashBack()
 	}
 
