@@ -5,9 +5,7 @@ function pl_attackState() {
 	    xSpeed = approach(xSpeed,0,aSpeed * god.gameSpeed);
 	}
 	
-	
-	
-	if(frameCounter > ds_list_find_value(ds_list_find_value(fd_master, currentAttack), 0)) {
+	if(frameCounter > 3) {
 		hitbox_create();
 	}
 
@@ -18,3 +16,5 @@ function pl_attackState() {
 	    dur = 0;
 	}
 }
+
+//ds_list_find_value(ds_list_find_value(fd_master, currentAttack), 0)

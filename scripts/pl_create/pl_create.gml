@@ -155,9 +155,20 @@ function pl_create() {
 	motSuperjump = false;
 	motHop = false;
 
-	//other
-	//hpMax = 1000;
-	//hp    = hpMax;
+	//bars
+	hpMax = 1000;
+	hp    = hpMax;
+	rhp   = 0;
+	
+//	hpBar
+	
+	mgMax = 700;
+	mg    = 100;
+	
+	udMax = 100;
+	ud    = 0;
+	ggMax = 100;
+	gg    = 50;
 
 	//stunDur = 0;
 	//knockBack = false;

@@ -14,6 +14,7 @@ function animation_counter() {
 
 	if(currentFrame > maxFrames){
 		if(currentState != states.prejump) {
+			currentAttack = -1;
 			state_reset();
 		}
 		frame_reset();
