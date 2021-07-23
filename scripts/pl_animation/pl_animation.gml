@@ -4,13 +4,13 @@ function pl_animation() {
 	yPos = y;
 
 	//make sure x and y scale is always trying to reset to 1
-	xScale = approach(xScale,1,0.05);
-	yScale = approach(yScale,1,0.05);
+//	xScale = approach(xScale,1,0.05);
+//	yScale = approach(yScale,1,0.05);
 
 	//store current sprite information
 	currentSprite = sprite;
 
-	//landing squish
+	//landing
 	if(onGround){
 	    if(!landed){
 	        landed = true;

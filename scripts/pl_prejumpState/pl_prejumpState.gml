@@ -1,6 +1,4 @@
  function pl_prejumpState(){
-	animation_counter()
-	
 	ySpeed = 0
 	xSpeed = 0
 	

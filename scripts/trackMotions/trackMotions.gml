@@ -19,4 +19,11 @@ function trackMotions(){
 	}else {
 		motSuperjump = false;
 	}
+	
+	//qcf
+
+	//dir2last[0] > dir3last[0] > dir5last[0]
+	//dir2last[0] < 15
+	//dir3last[0] < 10
+	//dir5last[0] < 5 || dir9last[0] < 5
 }

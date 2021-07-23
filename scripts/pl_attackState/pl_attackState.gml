@@ -1,11 +1,10 @@
 function pl_attackState() {
-	animation_counter()
 	//speed adjustments
 	if(onGround){
 	    xSpeed = approach(xSpeed,0,aSpeed * god.gameSpeed);
 	}
 	
-	if(frameCounter > 3) {
+	if(frameCounter = 3) {
 		hitbox_create();
 	}
 

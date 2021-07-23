@@ -5,15 +5,14 @@ function hbox_init() {
 	reference = reference_create();
 	
 	hitbox  = -1; //default hitbox variable
-
+	damage  = 0; //damage dealt
 	dur     = 0; //number of frames the hitbox is active
+	hitStun = 0; //hit stun duration
+	hitStop = 0;
 	xHit    = 0; //horizontal knock back
 	yHit    = 0; //vertical knock back
-	hitStun = 0; //hit stun duration
-	damage  = 0; //damage dealt
+	blockStun = 0;
 	blockdamage = 0; //damaget o blocking player
-	invincible = false; //what it sounds like
-
-
-
+	
+	invincible = 0; //0 = none, 1 = strike, 2 = throw, 4 = full, 5 = projectile
 }

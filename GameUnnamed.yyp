@@ -97,7 +97,7 @@
     {"id":{"name":"__init_global","path":"scripts/__init_global/__init_global.yy",},"order":3,},
     {"id":{"name":"sprReference","path":"sprites/sprReference/sprReference.yy",},"order":4,},
     {"id":{"name":"actWalkback","path":"scripts/actWalkback/actWalkback.yy",},"order":6,},
-    {"id":{"name":"atk5LP","path":"scripts/atk5LP/atk5LP.yy",},"order":0,},
+    {"id":{"name":"atk5L","path":"scripts/atk5L/atk5L.yy",},"order":0,},
     {"id":{"name":"actWalk","path":"scripts/actWalk/actWalk.yy",},"order":4,},
     {"id":{"name":"__global_object_depths","path":"scripts/__global_object_depths/__global_object_depths.yy",},"order":4,},
     {"id":{"name":"god","path":"objects/god/god.yy",},"order":0,},

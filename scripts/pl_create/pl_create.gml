@@ -23,7 +23,7 @@ function pl_create() {
 	currentAttack = -1;
 
 	//movement
-	wSpeed = 1.5;
+	wSpeed = 3;
 	wbSpeed = -1;
 	rSpeed = 3;
 	frctnValue = 2;
@@ -64,12 +64,14 @@ function pl_create() {
 	up      = false;
 	down    = false;
 	
-	lp = false;
-	mp = false;
-	hp = false;
-	lk = false;
-	mk = false;
-	hk = false;
+	L = false;
+	M = false;
+	H = false;
+	S = false;
+	T = false;
+	A1 = false;
+	A1 = false;
+	MC = false;
 	
 	//directions
 	forwardHold = forward;
@@ -128,26 +130,20 @@ function pl_create() {
 	dir9taplast = [60, 60];
 		
 	//buttons
-	atkLP = false;
-	atkMP = false;
-	atkHP = false;
-	atkLK = false;
-	atkMK = false;
-	atkHK = false;
+	atkL = false;
+	atkM = false;
+	atkH = false;
+	atkS = false;
 	
-	atkLPhold = false;
-	atkMPhold = false;
-	atkHPhold = false;
-	atkLKhold = false;
-	atkMKhold = false;
-	atkHKhold = false;
+	atkLhold = false;
+	atkMhold = false;
+	atkHhold = false;
+	atkShold = false;
 	
-	atkLPtap = false;
-	atkMPtap = false;
-	atkHPtap = false;
-	atkLKtap = false;
-	atkMKtap = false;
-	atkHKtap = false;
+	atkLtap = false;
+	atkMtap = false;
+	atkHtap = false;
+	atkStap = false;
 	
 	//motions
 	motDash = false;

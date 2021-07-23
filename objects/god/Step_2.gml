@@ -6,8 +6,8 @@ if(instance_exists(instPlayer1) && instance_exists(instPlayer2)) {
 	var target_x = mean(instPlayer1.x,instPlayer2.x)
 	var target_y = mean(instPlayer1.y,instPlayer2.y)
 	var cam_x = target_x - view_width/2;
-	if(target_y > 525) {
-		cam_y = 525 - view_height/2;
+	if(target_y > 650) {
+		cam_y = 650 - view_height/2;
 	}else {
 		var cam_y = target_y - (view_height/2);
 	}
@@ -15,21 +15,22 @@ if(instance_exists(instPlayer1) && instance_exists(instPlayer2)) {
 	
 	if(instance_exists(instWallL) && instance_exists(instWallR)) {
 		if(target_x - 100 > 100) {
-			instWallL.x = target_x - 164;
+			instWallL.x = target_x - 400;
 		} else {
 			instWallL.x = 100;
 		}
-		if(target_x + 100 < 1100) {
-			instWallR.x = target_x + 164;
+		if(target_x + 100 < 1820) {
+			instWallR.x = target_x + 400;
 		} else {
-			instWallR.x = 1100;
+			instWallR.x = 1820;
 		}
 	}
 	var _min = 100;
 	var _max = 250;
 	seperation = clamp(abs(instPlayer1.x-instPlayer2.x), _min, _max);
-	var zoom = lerp(0.01, 1.5, (seperation - _min)/(_max-_min));
+	var zoom = lerp(0.1, 1.5, (seperation - _min)/(_max-_min));
 	cameraZoom(zoom);
+	draw_text(0, 500, string(zoom));
 	
 }
 

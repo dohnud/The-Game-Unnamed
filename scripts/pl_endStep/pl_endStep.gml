@@ -12,10 +12,6 @@ function pl_endStep() {
 	        pl_dashState();
 	    break;
 		
-		case states.run:
-	        pl_runState();
-	    break;
-		
 		case states.backdash:
 	        pl_backdashState();
 	    break;

@@ -12,12 +12,14 @@ function pl_controller() {
 			west  = keyboard_check(ord("A"));
 			
 			
-			lp = keyboard_check(ord("T"));
-			mp = keyboard_check(ord("Y"));
-			hp = keyboard_check(ord("U"));
-			lk = keyboard_check(ord("G"));
-			mk = keyboard_check(ord("H"));
-			hk = keyboard_check(ord("J"));
+			L = keyboard_check(ord("T"));
+			M = keyboard_check(ord("Y"));
+			H = keyboard_check(ord("U"));
+			S = keyboard_check(ord("G"));
+			T = keyboard_check(ord("H"));
+			A1 = keyboard_check(ord("I"));
+			A2 = keyboard_check(ord("K"));
+			MC = keyboard_check(ord("J"));
 		
 		}else {
 			start  = gamepad_button_check_pressed(pad_num, gp_start);
@@ -28,12 +30,12 @@ function pl_controller() {
 			east  = gamepad_button_check(pad_num, gp_padr);
 			west  = gamepad_button_check(pad_num, gp_padl);
 			
-			lp = gamepad_button_check(pad_num, gp_face3);
-			mp = gamepad_button_check(pad_num, gp_face4);
-			hp = gamepad_button_check(pad_num, gp_shoulderr);
-			lk = gamepad_button_check(pad_num, gp_face1);
-			mk = gamepad_button_check(pad_num, gp_face2);
-			hk = gamepad_button_check(pad_num, gp_shoulderrb);
+			L = gamepad_button_check(pad_num, gp_face3);
+			M = gamepad_button_check(pad_num, gp_face4);
+			H = gamepad_button_check(pad_num, gp_shoulderr);
+			S = gamepad_button_check(pad_num, gp_face1);
+			T = gamepad_button_check(pad_num, gp_face2);
+			A1 = gamepad_button_check(pad_num, gp_shoulderrb);
 		}
 	}else {
 		if(pad_num = -1) {
@@ -46,12 +48,12 @@ function pl_controller() {
 			west  = keyboard_check(ord("L"));
 			
 			
-			lp = keyboard_check(vk_numpad4);
-			mp = keyboard_check(vk_numpad5);
-			hp = keyboard_check(vk_numpad6);
-			lk = keyboard_check(vk_numpad1);
-			mk = keyboard_check(vk_numpad2);
-			hk = keyboard_check(vk_numpad3);
+			L = keyboard_check(vk_numpad4);
+			M = keyboard_check(vk_numpad5);
+			H = keyboard_check(vk_numpad6);
+			S = keyboard_check(vk_numpad1);
+			T = keyboard_check(vk_numpad2);
+			A1 = keyboard_check(vk_numpad3);
 		
 		}else {
 			start  = gamepad_button_check_pressed(pad_num, gp_start);
@@ -62,12 +64,12 @@ function pl_controller() {
 			east  = gamepad_button_check(pad_num, gp_padr);
 			west  = gamepad_button_check(pad_num, gp_padl);
 			
-			lp = gamepad_button_check(pad_num, gp_face3);
-			mp = gamepad_button_check(pad_num, gp_face4);
-			hp = gamepad_button_check(pad_num, gp_shoulderr);
-			lk = gamepad_button_check(pad_num, gp_face1);
-			mk = gamepad_button_check(pad_num, gp_face2);
-			hk = gamepad_button_check(pad_num, gp_shoulderrb);
+			L = gamepad_button_check(pad_num, gp_face3);
+			M = gamepad_button_check(pad_num, gp_face4);
+			H = gamepad_button_check(pad_num, gp_shoulderr);
+			S = gamepad_button_check(pad_num, gp_face1);
+			T = gamepad_button_check(pad_num, gp_face2);
+			A1 = gamepad_button_check(pad_num, gp_shoulderrb);
 		}
 	}
 	

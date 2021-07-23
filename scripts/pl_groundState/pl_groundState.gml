@@ -54,8 +54,8 @@ function pl_groundState() {
 	}
 	
 	//attacks
-	if(atkLPtap){
-		atksLP()
+	if(atkLtap){
+		atksL()
 	}
 	
 //	if(p1_health <= 0) {

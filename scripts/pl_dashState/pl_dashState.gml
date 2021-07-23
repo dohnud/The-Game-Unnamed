@@ -1,6 +1,5 @@
 function pl_dashState() {
 	//advance dash animation
-	animation_counter()
 	animation_set(fdDefaultDash,plDefaultDash);
 	
 	//slow movement at the end of a dash

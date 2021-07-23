@@ -1,5 +1,8 @@
-// Script assets have changed for v2.3.0 see
-// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
+//dirX        - direction being held(t/f)
+//dirXtap     - direction being held, was in neutral last frame
+//dirXhold    - direction being held, was in the same direction last frame
+//dirXlast    - # of frames since the direction was held, stores the last 2 times
+//dirXtaplast - # of frames since the direction was held, stores the last 2 times
 function updateDirection(dirX, dirXtap, dirXhold, dirXlast, dirXtaplast){
 	if(dirX) {
 		if(dir5last[0] = 1) {

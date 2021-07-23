@@ -1,4 +1,5 @@
 function pl_tumbleState() {
+	animation_set(fdDefaultPrejump,plDefaultCrouch)
 	//slow horizontal speed
 	if(onGround){
 	    xSpeed = approach(xSpeed,0,0.1 * god.gameSpeed);
@@ -11,7 +12,4 @@ function pl_tumbleState() {
 	if(hitStun <= 0){
 	    state_reset();
 	}
-
-
-
 }
